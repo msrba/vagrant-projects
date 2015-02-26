@@ -50,7 +50,7 @@ environment = {
             {   :ip => "10.1.100.50",   :netmask => "255.255.255.0" },  # Public network
         ], 
         :provisioner    => [
-            {:type => 'shell', :path => 'scripts/provision_cloud_node.sh'}
+            {:type => 'shell', :path => 'scripts/provision_projects_node.sh'}
         ],       
         :port_forward => [
             {   :guest => 80,           host: 8080 },                # Redmine 

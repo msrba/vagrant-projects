@@ -67,7 +67,7 @@ ln -s /vagrant/scripts/files/site.pp $PUPPET_ENVIRONMENT/manifests/
 cat /vagrant/scripts/files/hiera/hiera.yaml > /etc/puppet/hiera.yaml
 
 # Fix Error 400 on SERVER: invalid byte sequence in US-ASCII at ... https://tickets.puppetlabs.com/browse/PUP-1386
-echo "LANG=en_US.UTF-8" >> /etc/default/puppetmaster
+echo "LANG=de_DE.utf8" >> /etc/default/puppetmaster
 
 # Restart puppetmaster
 service puppetmaster restart

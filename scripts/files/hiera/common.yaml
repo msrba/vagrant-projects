@@ -5,3 +5,6 @@
 base::production:                   false
 base::ntp::servers:                 ['ntps1.gwdg.de', 'ntps2.gwdg.de', 'ntps3.gwdg.de']
 base::network::public:              '10.1.100.0/24'
+
+# ----- Redmine setup -----
+redmine::vhost_servername:          'projects.gwdg.de'

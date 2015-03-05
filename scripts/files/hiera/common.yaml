@@ -8,3 +8,9 @@ base::network::public:              '10.1.100.0/24'
 
 # ----- Redmine setup -----
 redmine::vhost_servername:          'projects.gwdg.de'
+
+# ----- Gitolite setup -----
+gwdg::projects::gitolite::user:     'git'
+gwdg::projects::gitolite::group:    'git'
+gwdg::projects::gitolite::home:     '/home/git'
+gwdg::projects::gitolite::version:  'v3.6.2'

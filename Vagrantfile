@@ -68,8 +68,10 @@ Vagrant.configure("2") do |config|
 #        vb.gui = true
     end
 
-    environment.each do |node, env_config|
+	config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
 
+    environment.each do |node, env_config|
+		
         config.vm.define node do |vm_config|
 
             vm_config.vm.hostname   = env_config[:hostname]

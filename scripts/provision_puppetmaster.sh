@@ -36,6 +36,9 @@ chown puppet:puppet /var/lib/puppet/state/graphs
 
 # Configure puppetmaster
 
+#remove templatedir
+sed -i 's/templatedir/#templatedir/g' /etc/puppet/puppet.conf
+
 # Setup directory environments
 echo 'environmentpath = $confdir/environments'      >> /etc/puppet/puppet.conf
 echo "environment = $ENVIRONMENT_NAME"              >> /etc/puppet/puppet.conf

@@ -1,3 +1,3 @@
-[submodule "projects"]
-	path = projects
-	url = https://msrba@github.com/msrba/projects.git
+[submodule "modules"]
+	path = modules
+	url = https://msrba@github.com/msrba/puppet-projects.git
